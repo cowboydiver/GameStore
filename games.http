@@ -1,0 +1,29 @@
+GET http://localhost:5238/games
+
+###
+GET http://localhost:5238/games/2
+
+###
+POST http://localhost:5238/games
+Content-Type: application/json
+
+{
+    "name": "Helldivers 2",
+    "genreId": 1,
+    "price": 39.99,
+    "releaseDate": "2024-01-03"
+}
+
+###
+PUT http://localhost:5238/games/2
+Content-Type: application/json
+
+{
+    "name": "Helldivers 2",
+    "genreId": 2,
+    "price": 39.99,
+    "releaseDate": "2024-01-03"
+}
+
+####
+DELETE http://localhost:5238/games/3
